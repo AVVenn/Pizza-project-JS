@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Заказать пиццу</title>
+</head>
+<body>
+	<div class="product__cart">
+		<div class="left-side">
+			<div class="left-side__container"></div>
+			<div class="left-side__img"></div>
+		</div>
+		
+		<div class="right-side">
+			<h2 class="right-side__title">Cоздаем свою пиццу</h2>
+			<div class="right-side__subtitle">30 см, 720 грамм</div>
+			<div class="right-side__container-title">Выберите размер:</div>			
+			<div class="right-side__container">
+				<div class="radio-input-active"></div>
+				<input type="radio" name="size-pizza" id="one" class="radio-input" value="1">
+				<label for="one">Маленькая</label> 
+				<!-- class = "radio-input_label" -->
+				<input type="radio" name="size-pizza" id="two" class="radio-input" value="2" checked>
+				<label for="two">Средняя</label>
+				<input type="radio" name="size-pizza" id="three" class="radio-input" value="3">
+				<label for="three">Большая</label>
+			</div>
+			<div class="container-ingridients">
+				<div class="container-ingridients__title">Выберите ингридиенты:</div>
+				<div class="container-ingrigients__container"></div>
+			</div>
+			<!-- <div class="right-side__container-ingridients-two">Выберите ингридиенты</div> -->
+			<div class="container-sauce">
+				<div class="container-sauce__title">Соусы:</div>
+				<div class="container-sauce__contaier"></div>
+			</div>
+			<div class="button">Добавить в корзину за 15,00 руб.</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
