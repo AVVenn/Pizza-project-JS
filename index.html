@@ -4,42 +4,44 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css">
 	<title>Заказать пиццу</title>
 </head>
 <body>
 	<div class="product__cart">
 		<div class="left-side">
-			<div class="left-side__container"></div>
-			<div class="left-side__img"></div>
-		</div>
-		
+			<div class="left-side__container">
+				<div class="left-side__container-title">Вы выбрали:</div>
+			</div>
+			<div class="left-side__container-img">
+				<div class="left-side__container-img1"></div>
+				<div class="left-side__container-img2"></div>
+				<div class="left-side__container-img3"></div>
+				<div class="left-side__container-img4"></div>
+			</div>
+		</div>		
 		<div class="right-side">
-			<h2 class="right-side__title">Cоздаем свою пиццу</h2>
-			<div class="right-side__subtitle">30 см, 720 грамм</div>
-			<div class="right-side__container-title">Выберите размер:</div>			
-			<div class="right-side__container">
-				<div class="radio-input-active"></div>
-				<input type="radio" name="size-pizza" id="one" class="radio-input" value="1">
-				<label for="one">Маленькая</label> 
-				<!-- class = "radio-input_label" -->
-				<input type="radio" name="size-pizza" id="two" class="radio-input" value="2" checked>
-				<label for="two">Средняя</label>
-				<input type="radio" name="size-pizza" id="three" class="radio-input" value="3">
-				<label for="three">Большая</label>
+			<div class="right-side-main">
+				<h2 class="right-side__title">Cоздаем свою пиццу</h2>
+				<div class="right-side__subtitle">30 см, 720 грамм</div>
+				<div class="right-side__container-title">Выберите размер:</div>			
+				<div class="right-side__container">
+				</div>
+				<div class="container-sauce">
+					<div class="container-sauce__title">Соусы:</div>
+					<div class="container-sauce__container"></div>
+				</div>
+				<div class="container-ingridients">
+					<div class="container-ingridients__title">Выберите ингридиенты 1:</div>
+					<div class="container-ingrigients__container"></div>
+					<div class="container-ingridients__title">Выберите ингридиенты 2:</div>
+					<div class="container-ingrigients__container2"></div>
+				</div>
 			</div>
-			<div class="container-ingridients">
-				<div class="container-ingridients__title">Выберите ингридиенты:</div>
-				<div class="container-ingrigients__container"></div>
-			</div>
-			<!-- <div class="right-side__container-ingridients-two">Выберите ингридиенты</div> -->
-			<div class="container-sauce">
-				<div class="container-sauce__title">Соусы:</div>
-				<div class="container-sauce__contaier"></div>
-			</div>
-			<div class="button">Добавить в корзину за 15,00 руб.</div>
+			<div class="button disable">Добавить в корзину за 12.00 руб.</div>
 		</div>
 	</div>
-	<script src="script.js"></script>
+	<script src="script.js" type="module"></script>
 </body>
 </html>
