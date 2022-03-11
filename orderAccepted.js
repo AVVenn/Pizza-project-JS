@@ -1,4 +1,4 @@
-export function end(domNodes, fn, data) { 
+export function end(domNodes, fn, dataModel) { 
 	let end = document.createElement('div');
 	end.classList.add('end');
 	end.insertAdjacentHTML('afterbegin',`
@@ -10,14 +10,14 @@ export function end(domNodes, fn, data) {
 	document.body.classList.add(`accepted`);
 
 
-	let chosenSize = data.size.find((item) => item.checked === true);
-	let chosenSauce = data.sauce.find((item) => item.checked === true);
-	let chosenIngridientsArr = data.ingridientsOne.filter((item) => item.checked === true);
+	let chosenSize = dataModel.size.find((item) => item.checked === true);
+	let chosenSauce = dataModel.sauce.find((item) => item.checked === true);
+	let chosenIngridientsArr = dataModel.ingridientsOne.filter((item) => item.checked === true);
 
 	let ingridients = chosenIngridientsArr.reduce((acc, item) => acc +="/" + item.text, "");
 	let ingridientPrice = +chosenIngridientsArr.reduce((acc, item) => acc += item.price, 0);
 
-	let chosenIngridients2Arr = data.ingridientsTwo.filter((item) => item.checked === true);
+	let chosenIngridients2Arr = dataModel.ingridientsTwo.filter((item) => item.checked === true);
 
 	let ingridients2 = chosenIngridients2Arr.reduce((acc, item) => acc +="/" + item.text, "");
 	let ingridient2Price = +chosenIngridients2Arr.reduce((acc, item) => acc += item.price, 0);

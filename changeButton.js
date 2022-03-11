@@ -1,13 +1,16 @@
-export function changeButton (domNodes, data){
-	let func = (item) => item.checked === true;
-	let arrayForButton = [data.size.some(func), data.sauce.some(func),  data.ingridientsOne.some(func),
-		 data.ingridientsTwo.some(func)].every(item => item === true);
+export function changeButton(domNodes, dataModel) {
+  const func = (item) => item.checked;
 
-	if(arrayForButton === false){
-	domNodes.button.classList.add(`disable`);
-	}
+  const arrayForButton = [
+    dataModel.size.some(func),
+    dataModel.sauce.some(func),
+    dataModel.ingridientsOne.some(func),
+    dataModel.ingridientsTwo.some(func),
+  ].every((item) => item);
 
-	if(arrayForButton) {
-	domNodes.button.classList.remove(`disable`);
-}
+  if (!arrayForButton) {
+    domNodes.button.classList.add(`disable`);
+  } else {
+    domNodes.button.classList.remove(`disable`);
+  }
 }
